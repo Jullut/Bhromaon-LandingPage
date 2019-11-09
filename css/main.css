@@ -1,0 +1,379 @@
+body {
+  font-family: Arial, sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #ffffff; }
+
+a:visited {
+  color: #fff; }
+
+a:hover {
+  color: #bbb; }
+
+a:active {
+  color: #fff; }
+
+header {
+  min-height: 100vh;
+  height: 100vh; }
+  header .header__title {
+    position: relative;
+    background: url("../img/header_bg.png") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: calc(100% - 4em);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif; }
+  header .header__title-title {
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1.2; }
+  header .header__title-subtitle {
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    font-size: 1.4em;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    line-height: 1.2;
+    margin-bottom: 3em; }
+  header form {
+    position: relative;
+    background: #ffffff;
+    height: 3em;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  header .search {
+    position: absolute;
+    right: 3%;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-align: center;
+    color: white; }
+  header input:first-child {
+    width: 35em;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-family: "Josefin Sans";
+    color: #bbb; }
+  header .header_title-button {
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-align: center;
+    width: calc(10em - 0.16em);
+    border: 2px solid rgba(0, 0, 0, 0); }
+  header .header_title-button:active {
+    border: 2px solid #bbb;
+    color: #bbb; }
+  header .scroll {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    opacity: 0.5; }
+  header .scroll:hover .scroll a {
+    color: #fff;
+    transform: scale(1.03);
+    opacity: 1; }
+  header .fas.fa-arrow-down::before {
+    content: "\f063"; }
+  header .fa-arrow-down {
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center; }
+  header .logo_nav {
+    height: 10%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #5474fd;
+    text-transform: uppercase;
+    font-size: 0.8em; }
+  header .logo_nav a {
+    font-family: "Montserrat";
+    display: inline-block;
+    margin: 10px; }
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #5474fd;
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid #5474fd;
+  width: 10em;
+  height: 3em;
+  margin: 1%;
+  font-family: "Montserrat";
+  font-size: 0.8em;
+  cursor: pointer; }
+
+.btn_effect {
+  transition: background 0.3s linear; }
+
+.btn_effect:hover {
+  background: rgba(0, 0, 0, 0); }
+
+.title_all {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 3em;
+  text-align: center; }
+
+.choose {
+  background: url("../img/choose_bg.png") no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+  align-items: center; }
+  .choose ul {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; }
+  .choose li {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 5%; }
+  .choose li:nth-child(1) {
+    justify-content: center; }
+  .choose li:nth-child(2) {
+    justify-content: center; }
+  .choose h2 {
+    margin-bottom: 1.5em;
+    text-align: left; }
+  .choose p {
+    font-family: "Josefin Sans";
+    font-size: 0.9em;
+    margin-bottom: 1.5em;
+    line-height: 1.5; }
+  .choose .choose_buttons {
+    width: 11em;
+    height: 4em;
+    border-radius: 3px; }
+  .choose img {
+    width: 20em;
+    margin: 2.5px; }
+  .choose img:nth-child(2) {
+    align-self: center; }
+
+.icons {
+  padding-top: 3em;
+  height: 15em;
+  position: relative;
+  background: #333333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;}
+  .icons .icons-line {
+    position: absolute;
+    bottom: 40%;
+    padding-top: 2em;
+    width: 65%; }
+    .icons .icons-line img {
+      width: 100%; }
+  .icons ul {
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 1em;}
+  .icons li {
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff; }
+  .icons p {
+    font-family: "Josefin Sans";
+    font-size: 2em; }
+  .icons .ico {
+    font-size: 3em;
+    margin: 0.5em 0; }
+  .icons .fas.fa-search::before {
+    content: "\f002";
+    color: #4d67d5; }
+  .icons .far.fa-check-circle::before {
+    content: "\f058";
+    color: #ff6363; }
+  .icons .far.fa-thumbs-up {
+    content: "\f164";
+    color: #00a2ff; }
+
+.spain.one {
+  background: url("../img/spain1_bg.png") no-repeat center center;
+  background-size: cover; }
+
+.spain {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 35em;
+  padding: 0 5%;
+  padding-bottom: 2em; }
+  .spain .spain_box {
+    background: rgba(42, 39, 41, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    height: 45%;
+    padding: 3%;
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    font-weight: 300; }
+    .spain .spain_box h3 {
+      text-transform: uppercase; }
+    .spain .spain_box p {
+      line-height: 1.5; }
+
+.spain.two {
+  background: url("../img/spain2_bg.png") no-repeat center center;
+  background-size: cover; }
+
+.spain_two {
+  align-self: flex-end; }
+
+.feedback {
+  background: url("../img/tourist_bg.png") no-repeat center left;
+  background-size: cover;
+  padding: 10%;
+  padding-top: 0%; }
+  .feedback .feedback_title {
+    color: #fff;
+    font-size: 3em;
+    padding: 1em 0;
+    font-weight: 300; }
+  .feedback .slider_picture {
+    width: 100%; }
+    .feedback .slider_picture img {
+      width: 100%; }
+  .feedback .slider_text {
+    width: 44%;
+    padding: 3%;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #fff;
+    background: #333333; }
+    .feedback .slider_text h2 {
+      text-transform: uppercase;
+      font-size: 2em; }
+    .feedback .slider_text .fas.fa-quote-left::before {
+      content: "\f10d";
+      vertical-align: top;
+      margin-right: 5px;
+      color: #03a9f4; }
+  .feedback .slider_list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+footer {
+  background: #232323;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 15em;
+  color: #ffffff; }
+  footer .contact_subtitle {
+    margin: 0; }
+  footer .contact_icons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    margin: 2em 0; }
+  footer .fab {
+    transition: color 0.5s linear; }
+  footer .fab.fa-facebook-f::before {
+    content: "\f39e"; }
+  footer .fab.fa-facebook-f:hover {
+    color: #3f51b5; }
+  footer .fab.fa-twitter::before {
+    content: "\f099"; }
+  footer .fab.fa-twitter:hover {
+    color: #03a9f4; }
+  footer .fab.fa-linkedin-in::before {
+    content: "\f0e1"; }
+  footer .fab.fa-linkedin-in:hover {
+    color: #3f51b5; }
+  footer .fab.fa-youtube::before {
+    content: "\f167"; }
+  footer .fab.fa-youtube:hover {
+    color: #ff1c1c; }
+  footer .fab.fa-pinterest::before {
+    content: "\f0d2"; }
+  footer .fab.fa-pinterest:hover {
+    color: #f44336; }
+  footer .header__title-title {
+  color: #ffffff;
+  font-family: "Josefin Sans";
+  font-size: 1.9em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.2; }
+  footer .header__title-subtitle {
+  color: #ffffff;
+  font-family: "Josefin Sans";
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  line-height: 1.2;}
+
+@media (max-width: 768px) {
+  nav {
+    display: none; }
+  .header_title form {
+    width: 90%;
+    justify-content: center; }
+  .choose li {
+    width: 90%;
+    align-items: center; }
+  .choose li:nth-child(2) {
+    display: flex;
+    justify-content: center; }
+  .choose img {
+    width: calc(100% - 5px); }
+  .icons {
+    display: none; }
+  .icons-line {
+    display: none; }
+  .spain_box {
+    width: 94%; }
+  .slider_picture_wrap {
+    width: 100%; }
+  .slider_text {
+    width: 94%;
+    align-items: center; }
+  .spain .spain_box {
+    width: 90%; }
+  header .search {
+    opacity: 0;}
+  .feedback .slider_text {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .choose_us img {
+    width: 70%;
+    margin: 1%; } }
